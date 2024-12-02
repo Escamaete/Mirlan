@@ -1,0 +1,120 @@
+/* Общий стиль для body */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc); /* Градиентный фон */
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.7); /* Прозрачный черный */
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: white;
+}
+
+header button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #333, #000); /* Черный градиент */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Контейнер */
+main {
+  background: rgba(255, 255, 255, 0.1); /* Прозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Мягкая тень */
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Таблица */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(135deg, #457b9d, #1d3557); /* Градиент заголовка */
+  font-weight: bold;
+  color: white;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.2); /* Подсветка строки при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  table th {
+    display: none;
+  }
+
+  table td {
+    border: none;
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+}

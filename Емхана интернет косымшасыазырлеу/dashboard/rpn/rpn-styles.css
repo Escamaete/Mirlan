@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+/* Таблица */
+#results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#results-table th, #results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#results-table th {
+  background-color: #457b9d;
+  color: white;
+}
+
+#results-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.dashboard-logo {
+  width: 250px; /* Задайте ширину */
+  height: auto; /* Пропорциональная высота */
+  display: block;
+  margin:  auto;
+}
+/* Артқа батырмасы */
+.back-button {
+  position: absolute; /* Батырма экранның үстіңгі сол жақ бұрышында */
+  top: 20px; /* Жоғарыдан қашықтық */
+  left: 20px; /* Сол жақтан қашықтық */
+  padding: 10px 20px; /* Батырманың өлшемі */
+  background-color: #e63946; /* Қызыл түс */
+  color: #fff; /* Ақ мәтін */
+  border: none; /* Шекара жоқ */
+  border-radius: 5px; /* Бұрыштарды дөңгелектеу */
+  font-size: 16px; /* Мәтіннің өлшемі */
+  font-weight: bold; /* Қалың мәтін */
+  cursor: pointer; /* Сілтемеге ұқсас курсор */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Жұмсақ анимация */
+}
+
+.back-button:hover {
+  background-color: #ff6b6b; /* Жұмсақ қызыл түс */
+  transform: scale(1.05); /* Нақтырақ эффект */
+}
+
+.back-button:active {
+  background-color: #c53034; /* Батырма басылған кездегі түс */
+  transform: scale(0.95); /* Басылған кездегі эффект */
+}
+
+
+
+

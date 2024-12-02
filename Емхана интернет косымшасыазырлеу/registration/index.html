@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тіркелу</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <img src="logo-removebg.png" alt="Logo" class="registration-logo">
+  
+  <!-- Тілді таңдау -->
+  <div class="language-selector">
+    <select id="language-select" onchange="changeLanguage()">
+      <option value="kk">Қазақша</option>
+      <option value="ru">Русский</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+</header>
+
+  
+  <div class="screen">
+    <div class="form-container">
+      <label for="iin" data-translate="iinLabel">ИИН:</label>
+      <input type="text" id="iin" maxlength="12" placeholder="ИИН нөмірін енгізіңіз" required>
+      
+      <label for="password" data-translate="passwordLabel">Құпия сөз:</label>
+      <input type="password" id="password" placeholder="Құпия сөзді енгізіңіз" required>
+      
+      <button class="icon-button" onclick="register()" data-translate="registerButton">
+        <i class="fas fa-sign-in-alt"></i>
+        Тіркелу
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,131 @@
+/* Общий стиль для body */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc); /* Градиентный фон */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; /* Анимация фона */
+  display: flex;
+  justify-content: center; /* Центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  min-height: 100vh; /* Высота экрана */
+  color: white;
+  position: relative;
+}
+
+/* Анимация градиента */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Кнопки в углах */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #6e73f8, #4e54c8); /* Градиентный фон */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.2); /* Тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Основной блок */
+.dashboard {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+  backdrop-filter: blur(15px); /* Размытие заднего фона */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Глубокая тень */
+}
+
+/* Профиль сверху */
+.profile-button button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2e2e2e, #1a1a1a); /* Темный черный градиент */
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.7), -8px -8px 30px rgba(255, 255, 255, 0.1); /* Тень */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.profile-button button:hover {
+  transform: scale(1.05); /* Увеличение */
+  box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.9), -12px -12px 40px rgba(255, 255, 255, 0.2); /* Усиленная тень */
+  background: linear-gradient(135deg, #1a1a1a, #000000); /* Черный при наведении */
+}
+
+/* Кнопки одна под другой */
+.vertical-buttons {
+  display: flex;
+  flex-direction: column; /* Кнопки в колонку */
+  gap: 20px; /* Отступы между кнопками */
+  align-items: center; /* Центрирование кнопок */
+}
+
+.vertical-buttons button {
+  width: 100%; /* Растянуть кнопку по ширине */
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6e73f8, #4e54c8); /* Градиент */
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.5), -8px -8px 30px rgba(255, 255, 255, 0.2); /* Тень */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical-buttons button:hover {
+  transform: scale(1.05); /* Увеличение */
+  box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.6), -12px -12px 40px rgba(255, 255, 255, 0.3); /* Усиленная тень */
+}
+/* Шапка с логотипом */
+.dashboard-header {
+    position: absolute; /* Фиксированное положение */
+    top: 0;
+    left: 50%; /* Центровка по горизонтали */
+    transform: translateX(-50%); /* Смещение на половину ширины */
+    padding: 10px 0;
+    z-index: 1000; /* Поверх других элементов */
+}
+
+/* Логотип */
+.dashboard-logo {
+    width: 200px; /* Увеличенный размер логотипа */
+    height: auto;
+}
+.settings-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-button:hover {
+    background-color: #45a049;
+}
+
+

@@ -1,0 +1,134 @@
+/* Общий стиль для body */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc); /* Градиентный фон */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Контейнер */
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Прозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Мягкая тень */
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Кнопка назад */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #333, #000); /* Черный градиент */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Таблица */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  background: linear-gradient(135deg, #457b9d, #1d3557); /* Градиент заголовка */
+  font-weight: bold;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.2); /* Подсветка строки при наведении */
+}
+
+/* Кнопка удаления данных */
+.clear-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff6e7f, #bfe9ff); /* Красный градиент */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.clear-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.vertical-buttons button:hover {
+  transform: scale(1.05); /* Увеличение */
+  box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.6), -12px -12px 40px rgba(255, 255, 255, 0.3); /* Усиленная тень */
+}
+/* Шапка с логотипом */
+.dashboard-header {
+    position: absolute; /* Фиксированное положение */
+    top: 0;
+    left: 50%; /* Центровка по горизонтали */
+    transform: translateX(-50%); /* Смещение на половину ширины */
+    padding: 10px 0;
+    z-index: 1000; /* Поверх других элементов */
+}
+
+/* Логотип */
+.dashboard-logo {
+    width: 200px; /* Увеличенный размер логотипа */
+    height: auto;
+}
+.settings-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-button:hover {
+    background-color: #45a049;
+}

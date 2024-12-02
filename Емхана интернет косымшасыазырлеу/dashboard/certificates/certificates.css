@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: white;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0;
+}
+
+textarea, input, select, button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea, input, select {
+  background: rgba(255, 255, 255, 0.8);
+  color: #1d3557;
+}
+
+button {
+  background-color: #1d3557;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a8dadc;
+  color: #1d3557;
+}
+/* Артқа батырмасы */
+.back-button {
+  position: absolute; /* Батырма экранның үстіңгі сол жақ бұрышында */
+  top: 20px; /* Жоғарыдан қашықтық */
+  left: 20px; /* Сол жақтан қашықтық */
+  padding: 10px 20px; /* Батырманың өлшемі */
+  background-color: #e63946; /* Қызыл түс */
+  color: #fff; /* Ақ мәтін */
+  border: none; /* Шекара жоқ */
+  border-radius: 5px; /* Бұрыштарды дөңгелектеу */
+  font-size: 16px; /* Мәтіннің өлшемі */
+  font-weight: bold; /* Қалың мәтін */
+  cursor: pointer; /* Сілтемеге ұқсас курсор */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Жұмсақ анимация */
+}
+
+.back-button:hover {
+  background-color: #ff6b6b; /* Жұмсақ қызыл түс */
+  transform: scale(1.05); /* Нақтырақ эффект */
+}
+
+.back-button:active {
+  background-color: #c53034; /* Батырма басылған кездегі түс */
+  transform: scale(0.95); /* Басылған кездегі эффект */
+}
+

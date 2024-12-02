@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc); /* Фон градиент */
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: black; /* Негізгі мәтін түсі қара */
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.dashboard {
+  text-align: center;
+}
+
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1d3557; /* Қара-көк түсті батырма */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a8dadc; /* Ховер кезінде көкшіл түс */
+  color: #1d3557; /* Ховер кезінде мәтіннің қара-көк түсі */
+}
+
+main {
+  max-width: 800px;
+  margin: -80px auto 30px auto; /* Поднимаем блок выше */
+  padding: 20px;
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 15px;
+  background-color: #e63946; /* Ашық қызыл фон */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ff6b6b; /* Қызыл ховер түсі */
+}
+
+.save-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 15px;
+  background-color: #e63946; /* Ашық қызыл фон */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #457b9d; /* Қара-көк ховер түсі */
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Ашық сұр шекара */
+  border-radius: 5px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9); /* Ақ мөлдір фон */
+  color: black; /* Қара мәтін түсі */
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.dashboard-logo {
+  width: 250px; /* Задайте ширину */
+  height: auto; /* Пропорциональная высота */
+  display: block;
+  margin:  auto;
+}
+
+
